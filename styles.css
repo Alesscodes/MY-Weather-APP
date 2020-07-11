@@ -9,6 +9,8 @@ h1 {
   font-weight: 115;
   line-height: 29px;
   margin-bottom: 2px;
+  padding-top: 10px;
+  text-align: center;
 }
 
 ul {
@@ -25,6 +27,7 @@ li {
   font-size: 16px;
   font-weight: 115;
   line-height: 20px;
+  text-align: center;
 }
 
 li:first-letter {
@@ -61,15 +64,15 @@ footer {
 
 .weather-temperature strong {
   color: rgb(33, 33, 33);
-  font-size: 64px;
-  line-height: 2;
+  font-size: 50px;
+  line-height: 1;
   font-weight: 400;
 }
 
 .weather-temperature .units {
   position: relative;
-  font-size: 25px;
-  top: -34px;
+  font-size: 20px;
+  top: -20px;
 }
 
 .weather-temperature .active {
@@ -82,12 +85,12 @@ footer {
 }
 
 .weather-forecast {
-  margin-top: 10px;
+  margin-top: 40px;
 }
 
 .weather-forecast h3 {
   color: rgb(70, 67, 67);
-  font-size: 14px;
+  font-size: 10px;
   font-weight: 400;
   text-align: center;
   height: 15px;
