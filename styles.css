@@ -1,67 +1,119 @@
 body {
-  font-family: arial, sans-serif;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
 
 h1 {
-  color: #7c7c7c;
-  font-size: 24px;
-  font-weight: 100;
-  line-height: 28px;
-  margin: 0;
+  color: #111111;
+  font-size: 28px;
+  font-weight: 115;
+  line-height: 29px;
+  margin-bottom: 2px;
 }
 
 ul {
-  margin: 0 0 10px;
+  margin: 0;
   padding: 0;
 }
 
 li {
-  color: #7c7c7c;
-  font-size: 16px;
-  font-weight: 100;
-  height: 19px;
-  line-height: 1;
   list-style: none;
+  margin: 0;
+  padding: 0;
+
+  color: rgb(58, 56, 56);
+  font-size: 16px;
+  font-weight: 115;
+  line-height: 20px;
+}
+
+li:first-letter {
+  text-transform: capitalize;
 }
 
 footer {
   text-align: center;
+  margin-top: 20px;
 }
-.weather-app {
-  border: 1px solid #dadde1;
-  padding: 15px;
-  margin: 20px auto;
-  border-radius: 10px;
+
+.weather-app-wrapper {
   max-width: 600px;
-  background-image: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);
+  margin: 40px auto;
 }
 
-.weather-icon {
-  height: 64px;
-  width: 64px;
+.weather-app {
+  padding: 60px;
+  border: 1px solid #dadde1;
+  border-radius: 80px;
+  background-image: linear-gradient(-225deg, #7de2fc 0%, #b9b6e5 100%);
+}
+
+.overview {
+  margin-bottom: 20px;
+}
+
+.weather-temperature img {
   margin-right: 10px;
+  height: 74px;
+  width: 74px;
+  margin-bottom: -30px;
 }
 
-.temperature {
+.weather-temperature strong {
   color: rgb(33, 33, 33);
   font-size: 64px;
+  line-height: 2;
   font-weight: 400;
-  line-height: 1;
 }
 
-.units {
+.weather-temperature .units {
   position: relative;
+  font-size: 25px;
   top: -34px;
 }
 
-.search-form {
-  margin-bottom: 20px;
+.weather-temperature .active {
+  color: rgb(33, 33, 33);
+  cursor: default;
 }
-#current-location-button {
-  background-color: #d6dfe5;
-  color: green;
+
+.weather-temperature .active:hover {
+  text-decoration: none;
 }
-.form-control {
-  background-color: #d6dfe5;
-  color: blue;
+
+.weather-forecast {
+  margin-top: 10px;
+}
+
+.weather-forecast h3 {
+  color: rgb(70, 67, 67);
+  font-size: 14px;
+  font-weight: 400;
+  text-align: center;
+  height: 15px;
+  line-height: 15px;
+  padding-top: 7px;
+}
+
+.weather-forecast img {
+  display: block;
+  margin: 0 auto;
+  height: 48px;
+  width: 48px;
+}
+
+.weather-forecast-temperature {
+  text-align: center;
+  color: rgb(83, 81, 81);
+  font-size: 14px;
+  font-weight: 400;
+  height: auto;
+  line-height: 15px;
+  white-space: nowrap;
+}
+
+.btn-primary {
+  color: #ffffff;
+  background-color: #6080da;
+  border: #90abf7;
 }
